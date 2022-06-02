@@ -1,0 +1,31 @@
+---
+layout: main-layout.njk
+title: Objednávka
+---
+
+<h1 class="text-center">Objednávkový formulár</h1>
+
+<div class="form-wrap">
+	<p>Kontaktovať nás môžete na tel. čísle +421 904 123 456, emailom na  iveta@handmade.sk alebo prostredníctvom objednávkového formulára.</p>
+
+	<form action="dakujeme.html" method="POST">
+		<div class="form-field">
+			<label for="name">Vaše meno a priezvisko<span class="required">*</span></label>
+			<input type="text" name="name" id="name" placeholder="Vaše meno a priezvisko" autofocus required>
+			<label for="email">Váš kontaktný email<span class="required">*</span></label>
+			<input type="email" name="email" id="email" placeholder="Váš kontaktný email" required>
+			<label for="phone">Vaše kontaktné telefónne číslo<span class="required">*</span></label>
+			<input type="tel" name="phone" id="phone" placeholder="+421 xxx xxx xxx" required>
+			<label for="name">Text Vašej objednávky<span class="required">*</span></label>
+			<textarea name="text" id="text" placeholder="Text Vašej objednávky" cols="30" rows="10" required></textarea>
+		</div>
+		<div class="form-horizontal">
+			<input type="checkbox" name="agreement" id="agreement" required>
+			<label for="checkbox">Súhlasím so spracovaním osobných údajov<span class="required">*</span></label>
+		</div>
+		<a href="/dakujeme/">
+			<input class="submit" type="submit" value="Odoslať objednávku">
+		</a>
+	</form> 
+</div>    
+

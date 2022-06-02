@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+
+	<nav class="menu">
+		<ul class="menu__list">
+			<li class="menu__item"><a href="/objednavka/" class="menu__link">objednávka</a></li>
+			<li class="menu__item"><a href="/" class="menu__link">Iveta handmade</a></li>
+			<li class="menu__item"><a href="/kontakt/" class="menu__link">kontakt</a></li>
+		</ul>
+	</nav>
+
+	<header class="header">
+		<h1 class="header__logo">Iveta handmade</h1>
+	</header>
+
+	<main class="main">
+
+		{{ content | safe }}
+
+	</main>
+
+
+	<footer class="footer">
+		+421 904 123 456<br>
+		iveta@handmade.sk
+	</footer>
+
+</body>
+</html>
